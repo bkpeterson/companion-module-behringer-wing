@@ -3,29 +3,30 @@
 	"legacy": [
 		"wing"
 	],
-	"version": "1.0.8",
+	"version": "2.0.1",
 	"api_version": "1.0.0",
 	"keywords": [
 		"Audio",
 		"Mixer",
 		"Console"
 	],
-	"manufacturer": "Behringer",
-	"product": "WING",
-	"shortname": "wing",
-	"description": "Module to control Behringer WING consoles",
-	"main": "index.js",
 	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1"
+		"format": "prettier -w .",
+		"package": "companion-module-build"
 	},
 	"author": "John Knight, Jr <istnv@ayesti.com>",
 	"license": "MIT",
-	"homepage": "https://github.com/bitfocus/companion-module-behringer-wing#readme",
-	"bugs": {
-		"url": "https://github.com/bitfocus/companion-module-behringer-wing/issues"
-	},
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/bitfocus/companion-module-behringer-wing.git"
-	}
+	},
+	"dependencies": {
+		"@companion-module/base": "~1.11.2"
+	},
+	"devDependencies": {
+		"@companion-module/tools": "^2.1.1",
+		"prettier": "^3.4.2"
+	},
+	"prettier": "@companion-module/tools/.prettierrc.json",
+	"packageManager": "yarn@4.5.3"
 }
