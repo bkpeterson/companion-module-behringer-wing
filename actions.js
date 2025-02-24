@@ -441,8 +441,8 @@ module.exports = function (self) {
 					tooltip: 'Destination',
 					label: 'Destination',
 					id: 'bus',
-					default: self.CHOICES_BUS[st][0].id,
-					choices: self.CHOICES_BUS[st]
+					default: self.CHOICES_BUS['send_bm'][0].id,
+					choices: self.CHOICES_BUS['send_bm']
 				},
 				{
 					id: 'on',
@@ -477,8 +477,8 @@ module.exports = function (self) {
 					tooltip: 'Destination',
 					label: 'Destination',
 					id: 'bus',
-					default: self.CHOICES_BUS[st][0].id,
-					choices: self.CHOICES_BUS[st]
+					default: self.CHOICES_BUS['send_m'][0].id,
+					choices: self.CHOICES_BUS['send_m']
 				},
 				{
 					id: 'on',
@@ -513,8 +513,8 @@ module.exports = function (self) {
 					tooltip: 'Destination',
 					label: 'Destination',
 					id: 'bus',
-					default: self.CHOICES_BUS[st][0].id,
-					choices: self.CHOICES_BUS[st]
+					default: self.CHOICES_BUS['send_bmm'][0].id,
+					choices: self.CHOICES_BUS['send_bmm']
 				},
 				{
 					id: 'on',
@@ -548,8 +548,8 @@ module.exports = function (self) {
 					tooltip: 'Direct Input',
 					label: 'Input',
 					id: 'source',
-					default: self.CHOICES_BUS[st][0].id,
-					choices: self.CHOICES_BUS[st]
+					default: self.CHOICES_BUS['direct'][0].id,
+					choices: self.CHOICES_BUS['direct']
 				},
 				{
 					id: 'on',
@@ -587,8 +587,8 @@ module.exports = function (self) {
 					tooltip: 'Destination',
 					label: 'Destination',
 					id: 'bus',
-					default: self.CHOICES_BUS[st][0].id,
-					choices: self.CHOICES_BUS[st]
+					default: self.CHOICES_BUS['send_bm'][0].id,
+					choices: self.CHOICES_BUS['send_bm']
 				},
 				{
 					type:	 'dropdown',
@@ -632,8 +632,8 @@ module.exports = function (self) {
 					tooltip: 'Destination',
 					label: 'Destination',
 					id: 'bus',
-					default: self.CHOICES_BUS[st][0].id,
-					choices: self.CHOICES_BUS[st]
+					default: self.CHOICES_BUS['send_m'][0].id,
+					choices: self.CHOICES_BUS['send_m']
 				},
 				{
 					type:	 'dropdown',
@@ -677,8 +677,8 @@ module.exports = function (self) {
 					tooltip: 'Destination',
 					label: 'Destination',
 					id: 'bus',
-					default: self.CHOICES_BUS[st][0].id,
-					choices: self.CHOICES_BUS[st]
+					default: self.CHOICES_BUS['send_bmm'][0].id,
+					choices: self.CHOICES_BUS['send_bmm']
 				},
 				{
 					type:	 'dropdown',
@@ -722,8 +722,8 @@ module.exports = function (self) {
 					tooltip: 'Direct Input',
 					label: 'Input',
 					id: 'source',
-					default: self.CHOICES_BUS[st][0].id,
-					choices: self.CHOICES_BUS[st]
+					default: self.CHOICES_BUS['direct'][0].id,
+					choices: self.CHOICES_BUS['direct']
 				},
 				{
 					type:	 'dropdown',
@@ -770,8 +770,8 @@ module.exports = function (self) {
 					tooltip: 'Destination',
 					label: 'Destination',
 					id: 'bus',
-					default: self.CHOICES_BUS[st][0].id,
-					choices: self.CHOICES_BUS[st]
+					default: self.CHOICES_BUS['send_bm'][0].id,
+					choices: self.CHOICES_BUS['send_bm']
 				},
 				{
 					type:	'number',
@@ -819,8 +819,8 @@ module.exports = function (self) {
 					tooltip: 'Destination',
 					label: 'Destination',
 					id: 'bus',
-					default: self.CHOICES_BUS[st][0].id,
-					choices: self.CHOICES_BUS[st]
+					default: self.CHOICES_BUS['send_m'][0].id,
+					choices: self.CHOICES_BUS['send_m']
 				},
 				{
 					type:	'number',
@@ -868,8 +868,8 @@ module.exports = function (self) {
 					tooltip: 'Destination',
 					label: 'Destination',
 					id: 'bus',
-					default: self.CHOICES_BUS[st][0].id,
-					choices: self.CHOICES_BUS[st]
+					default: self.CHOICES_BUS['send_bmm'][0].id,
+					choices: self.CHOICES_BUS['send_bmm']
 				},
 				{
 					type:	'number',
@@ -917,8 +917,8 @@ module.exports = function (self) {
 					tooltip: 'Direct Input',
 					label: 'Input',
 					id: 'source',
-					default: self.CHOICES_BUS[st][0].id,
-					choices: self.CHOICES_BUS[st]
+					default: self.CHOICES_BUS['direct'][0].id,
+					choices: self.CHOICES_BUS['direct']
 				},
 				{
 					type:	'number',
@@ -969,8 +969,8 @@ module.exports = function (self) {
 					tooltip: 'Destination',
 					label: 'Destination',
 					id: 'bus',
-					default: self.CHOICES_BUS[st][0].id,
-					choices: self.CHOICES_BUS[st]
+					default: self.CHOICES_BUS['send_bm'][0].id,
+					choices: self.CHOICES_BUS['send_bm']
 				},
 				{
 					type:	 'number',
@@ -1019,8 +1019,8 @@ module.exports = function (self) {
 					tooltip: 'Destination',
 					label: 'Destination',
 					id: 'bus',
-					default: self.CHOICES_BUS[st][0].id,
-					choices: self.CHOICES_BUS[st]
+					default: self.CHOICES_BUS['send_m'][0].id,
+					choices: self.CHOICES_BUS['send_m']
 				},
 				{
 					type:	 'number',
@@ -1069,8 +1069,8 @@ module.exports = function (self) {
 					tooltip: 'Destination',
 					label: 'Destination',
 					id: 'bus',
-					default: self.CHOICES_BUS[st][0].id,
-					choices: self.CHOICES_BUS[st]
+					default: self.CHOICES_BUS['send_bmm'][0].id,
+					choices: self.CHOICES_BUS['send_bmm']
 				},
 				{
 					type:	 'number',
@@ -1119,8 +1119,8 @@ module.exports = function (self) {
 					tooltip: 'Direct Input',
 					label: 'Input',
 					id: 'source',
-					default: self.CHOICES_BUS[st][0].id,
-					choices: self.CHOICES_BUS[st]
+					default: self.CHOICES_BUS['direct'][0].id,
+					choices: self.CHOICES_BUS['direct']
 				},
 				{
 					type:	 'number',
@@ -1172,8 +1172,8 @@ module.exports = function (self) {
 					tooltip: 'Destination',
 					label: 'Destination',
 					id: 'bus',
-					default: self.CHOICES_BUS[st][0].id,
-					choices: self.CHOICES_BUS[st]
+					default: self.CHOICES_BUS['send_bm'][0].id,
+					choices: self.CHOICES_BUS['send_bm']
 				},
 				{
 					type:	 'dropdown',
@@ -1226,8 +1226,8 @@ module.exports = function (self) {
 					tooltip: 'Destination',
 					label: 'Destination',
 					id: 'bus',
-					default: self.CHOICES_BUS[st][0].id,
-					choices: self.CHOICES_BUS[st]
+					default: self.CHOICES_BUS['send_m'][0].id,
+					choices: self.CHOICES_BUS['send_m']
 				},
 				{
 					type:	 'dropdown',
@@ -1280,8 +1280,8 @@ module.exports = function (self) {
 					tooltip: 'Destination',
 					label: 'Destination',
 					id: 'bus',
-					default: self.CHOICES_BUS[st][0].id,
-					choices: self.CHOICES_BUS[st]
+					default: self.CHOICES_BUS['send_bmm'][0].id,
+					choices: self.CHOICES_BUS['send_bmm']
 				},
 				{
 					type:	 'dropdown',
@@ -1334,8 +1334,8 @@ module.exports = function (self) {
 					tooltip: 'Direct Input',
 					label: 'Input',
 					id: 'source',
-					default: self.CHOICES_BUS[st][0].id,
-					choices: self.CHOICES_BUS[st]
+					default: self.CHOICES_BUS['direct'][0].id,
+					choices: self.CHOICES_BUS['direct']
 				},
 				{
 					type:	 'dropdown',
