@@ -21,10 +21,14 @@
 		"url": "git+https://github.com/bitfocus/companion-module-behringer-wing.git"
 	},
 	"dependencies": {
-		"@companion-module/base": "~1.11.2"
+		"@companion-module/base": "~1.11.3",
+		"osc": "^2.4.5"
 	},
 	"devDependencies": {
 		"@companion-module/tools": "^2.1.1",
+		"@eslint/js": "^9.21.0",
+		"eslint": "^9.21.0",
+		"globals": "^16.0.0",
 		"prettier": "^3.4.2"
 	},
 	"prettier": "@companion-module/tools/.prettierrc.json",

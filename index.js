@@ -12,6 +12,8 @@ var busDef = require('./defbus.json');
 
 class ModuleInstance extends InstanceBase {
 	constructor(internal) {
+		super(internal);
+
 		var self = this;
 	
 		this.ICON_SOLO = 'iVBORw0KGgoAAAANSUhEUgAAAEgAAAA6CAYAAAATBx+NAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEwAACxMBAJqcGAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAUcSURBVHic7ZpLaFxVGIC//96ZTNKkqSnGN+JzUS3oyqi1ogstqKAIuhIVFEUUtOBGhC5UxI2FgigYKLqpFRdV8FFsN1rFbtoGWwyl1lStsa+0NjNJzsy5M7+LuXdyZzKT00zSJpTzwYU573O/+c859w4jeQ0UTytMsNgzWOp4QQ4y6YQijyrl4cWazFIgIHgHeDJJ1wkKKf/dLRy64LNaQuSV8XTaLzEHXpADL8iBF+TAC3LgBTnwghx4QQ68IAdekAMvyIEX5MALcuAFOfCCHHhBDrwgB16QAy/IgRfkwAty4AU58IIceEEOvCAHXpADL8iBF+TAC3LgBTnwghx4QQ68IAcNf8GjfzEmoUpfucgalJUIY2VhpKODYRHa+gduZPhY4XpVjnd08dS8JpfXQJNrXIORgnL5vDqcIyXDC9ZQsAZtuE5Ehofa6dMafrUGLRlG5to2r8FgyslUbYmJgsB1SrBzXLm0nYnNldIkAwIfAd1NivsryhUXYh6zURPUYStINaBXC8GOs8rK8z54wLOpOWxEuVfgEYQ3YYn8mTQJpzgkdaJcC699/yl953Nsa9gRL6eTjWWqBKqsaMjrskXesIY91jBqDfut4T1tmGerJaZKr53i7bh81BqGbJENqtMR3LjE6gTNlBT+clJZvtBiUjeyLR43iqZ4WpVsq7qqdFjDj032KrWG31S5JNXvDEGqLLeGoabti+xWpbOZoBnHvABZWyGoKKB3dhJuP6H0LKya2mB74k+hCp9GJf61hi+iIk+okktXjYq8CqyN5/g7yrvAUFy8qlzkrdmGiopsAG6Lkwfi9gcBUAaiEq83bZjXQAupCEpfE2VJImnXMW26kc4LVfoiw+EWUbHfGG5I6iZRYQ1lY7gxbr/CGsbj/NOq1f2sWQRZw7G43pSOVw8hneQaa7Bx/sHYx+wRlKbDKmE1ku7pRrYlYbhQiHAmLHEHsAk401C8OqzmEy+9W+P84c5ODsftzwI/xfl9xnBts3F0giuh9viyW3o5BSDLOIrWovBmbRIEVUGzPI5la5LkgQLyZWPozxfpZSzbyWuZHJeh3CfC5lTxOlVCoIfp024s3V6lerMAYVi/qScUQ3pTyVN1hVLrT5isqwec46tG1iphWQFZV0C2zraZtosIUbaLHzI5ngN2JUMzQT8wwfTXWHdiSeoEq1TIN+s7V6GQStafzOkTcNnM9uf8LpaNapIeiyVlnI0cWMPGkuFlVTpq863KTx5UK3QzLkKJZEOFW3SSq+O6XcCaOH88l+PPpgN1MZqKlAGNT2bN049wO4DAiEidSGCOL6spSY8XCLbMV5IqVwl8EBX5xxq+iopsjooMAaviKvtEmKR6B1vivDAK+LpkWB8V+Y44IgQ+F6HcbBwRVJTP4mRPVGJ7ybA+yvAtVL8c1Vr/9eQ10EKl+SnW6pqMJHl3+yQ5OdqhNMXWWcYpR4aHUzKXWcPeZnVLhiNamH6HbPEctDIyHGox1oEkquZ0irUiiSSBZyYIBtuVlLW8ovAS8L3AH0CJ6mm2A+XBTCffJHVFmMzkuB94X+EIYIFRgcFsmbukh+O1urAb2Inyc6r96dByt8CHwFHAKvwFbMrkWCvSfP+SvAYqCrlSZc43GGWEKBSAwR4qL7b788RSIq/BIPB8nDTzEgQQhUKUEUCHQfYu1EQXkQHgpvjztKDqq0V7VAJBZUEmt9QwGQAVKIcX5x3Ol4xUH8LaRqt9CNVN86JCYep/T6xGm2u0hEsAAAAASUVORK5CYII=';
@@ -47,8 +49,6 @@ class ModuleInstance extends InstanceBase {
 		self.PollCount = 7;
 	
 		self.build_choices();
-	
-		super(internal);
 	}
 
 	async init(config) {
@@ -733,18 +733,18 @@ class ModuleInstance extends InstanceBase {
 		];
 
 		self.COLOR_VALUES = [
-			{ label: 'Gray blue',	id: '1',	fg: self.rgb(162, 224, 235) },
-			{ label: 'Medium blue',	id: '2',	fg: self.rgb( 64, 242, 252) },
-			{ label: 'Dark blue',	id: '3',	fg: self.rgb( 64, 181, 235) },
-			{ label: 'Turquoise',	id: '4',	fg: self.rgb( 36, 252, 237) },
-			{ label: 'Green',		id: '5',	fg: self.rgb(  1, 242,  49) },
-			{ label: 'Olive green',	id: '6',	fg: self.rgb(197, 223,  61) },
-			{ label: 'Yellow',		id: '7',	fg: self.rgb(254, 242,   0) },
-			{ label: 'Orange',		id: '8',	fg: self.rgb(252, 141,  51) },
-			{ label: 'Red',			id: '9',	fg: self.rgb(252,  50,  50) },
-			{ label: 'Coral',		id: '10',	fg: self.rgb(254, 145, 104) },
-			{ label: 'Pink',		id: '11',	fg: self.rgb(251, 161, 249) },
-			{ label: 'Mauve',		id: '12',	fg: self.rgb(161, 141, 254) }
+			{ label: 'Gray blue',	id: '1'},
+			{ label: 'Medium blue',	id: '2'},
+			{ label: 'Dark blue',	id: '3'},
+			{ label: 'Turquoise',	id: '4'},
+			{ label: 'Green',		id: '5'},
+			{ label: 'Olive green',	id: '6'},
+			{ label: 'Yellow',		id: '7'},
+			{ label: 'Orange',		id: '8'},
+			{ label: 'Red',			id: '9'},
+			{ label: 'Coral',		id: '10'},
+			{ label: 'Pink',		id: '11'},
+			{ label: 'Mauve',		id: '12'}
 		];
 
 		self.TAPE_FUNCITONS = [
